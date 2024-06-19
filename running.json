@@ -1,0 +1,8 @@
+{
+    "apps": [
+      {
+        "name": "[BE] synapsis test",
+        "script": "make run"
+      }
+    ]
+  }
