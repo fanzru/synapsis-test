@@ -1,11 +1,77 @@
+# Synapsis Test
 
-# **Synapsis Backend Test**
-Decription Apps:
--
-Simple backend .
+Hello mas/mba/bapak/ibu,
+
+First of all, I would like to apologize profusely for being unable to complete the synapsis test due to illness.
+
+I had previously informed the Synapsis HR team, but the Synapsis HR team gave me a second chance, but it turned out that I had not completely recovered. Thanks for second opportunity as well.
+
+I really tried to at least submit this test to respect the Hiring Manager / Human Resource team from Synapsis, I hope sir/madam/madam/madam will forgive me for the problems I experienced.
+
+I have accepted that by doing this I will be deemed not to have passed to the next stage, because I have not been able to complete all the requirements given.
+
+However, let me explain some of the concerns or todo lists in my mind for this test question, for my self to learn:
+
+### list of todo
+**required:**
+1. create flow Customer can add product to shopping cart
+2. create flow Customers can see a list of products that have been added to the shopping cart
+3. create flow Customer can delete product list in shopping cart
+4. create flow Customers can checkout and make payment transactions
+5. create swagger with open api standar implementation
+6. implement CI/CD with docker as containerization
+
+**for my self:**
+- buffer algorithm for order flow to minimize error
+- use payment gateway xendit development environment for payment transaction 
+- design roles database
+- implement self registry with private S3 and using portainer as webhook
 
 
-### CURL:
+> "I hope you can find the best candidate." - Ananda Affan Fattahila
+
+## List CURL API 
+
+### Register
+
+**body request:**
+- username: string
+- password: string, minimum 6 char
+
+```
+curl --location 'https://synapsis.fanzru.dev/accounts/register' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "fanzru",
+    "password": "fanzru123"
+}'
+```
+
+### Login
+**body request:**
+- username: string
+- password: string, minimum 6 char
+
+```
+curl --location 'https://synapsis.fanzru.dev/accounts/login' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "fanzru",
+    "password": "fanzru123"
+}'
+```
+### Find Product
+query parameters:
+- categoryId : integer, in this case you can use 1,2,3,4,5
+```
+curl --location 'https://synapsis.fanzru.dev/product/?categoryId=1'
+```
+### Find Product per Category
+query parameters:
+- categoryId : integer, in this case you can use 1,2,3,4,5
+```
+curl --location 'https://synapsis.fanzru.dev/categories/?categoryId=1'
+```
 
 
 Stacks : Golang, MySQL, Nginx, Ubuntu...
