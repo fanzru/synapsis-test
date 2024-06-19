@@ -80,6 +80,7 @@ Stacks : Golang, MySQL, Nginx, Ubuntu...
 
 # **Documentation**
 
+![Entity Relationship Diagram](https://github.com/fanzru/synapsis-test/blob/main/erd.png)
   
 
 Using Domain Drive Design with Golang
